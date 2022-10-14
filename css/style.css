@@ -33,8 +33,17 @@ body{
     font-size: 2rem;
 }
 
+#search-input::placeholder{
+    
+}
+
 #search-button{
     margin-right: 5rem;
     font-size: 2rem;
 
+}
+
+/* Card */
+.card:hover{
+    transform: scale(1.10);
 }
