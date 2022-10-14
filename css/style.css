@@ -1,0 +1,21 @@
+/*Usos generales*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: aliceblue;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+#brand{
+    text-align: center;
+    padding: 10rem;
+    margin: 0;
+}
