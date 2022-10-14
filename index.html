@@ -14,30 +14,57 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" id="brand" href="#">Navbar w/ text</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="brand" href="#">Navbar</a>
+      </div>
+    </nav>
+    
+    <!-- SearchBar -->
+    <div class="container-md">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 search-bar" id="search-input" type="search" placeholder="¿Qué comprarás hoy?" aria-label="Search">
+        <button class="btn btn-outline-success search-bar" id="search-button" type="submit">Buscar</button>
+      </form>
+    </div>
+  
+    <main>
+      <div>
+        <h1 class="text-center mb-5 mt-0">B-sale productos</h1>
+        <div class="container text-center" id="productos">
+          <div class="row">
+            <div class="col-6 mb-5 col-sm-4"><h1>hola mundo</h1></div>
+            <div class="col-6 mb-5 col-sm-4"><h1>hola mundo</h1></div>
+            <div class="col-6 mb-5 col-sm-4"><h1>hola mundo</h1></div>
+            <div class="col-6 mb-5 col-sm-4"><h1>hola mundo</h1></div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-      
+      </div>
 
-    <h1>Hola mundo comn Bootstrap</h1>
+    </main>
         
     <!-- Script JS de Bootstrap -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
