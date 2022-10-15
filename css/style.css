@@ -1,4 +1,9 @@
 /*Usos generales*/
+:root{
+    --titulos: 'Alfa Slab One', cursive;
+
+}
+
 html{
     box-sizing: border-box;
     font-size: 62.5%;
@@ -12,6 +17,14 @@ body{
     background-color: aliceblue;
     font-size: 1.6rem;
     line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--titulos);
+}
+
+p{
+    font-family: var(--titulos);
 }
 
 /*Navbar brand*/
