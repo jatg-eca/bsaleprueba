@@ -4,14 +4,12 @@ fetch("../json/data.json")
     .then(response => response.json())
     .then(array => {
         array.forEach(element => {
-            let cardCounter;
-            // console.log(element);
             /***
              * Producto nombre
              */
             let productName = element.productName;
-            productName = productName.toLowerCase();
-            productName = productName.charAt(0).toUpperCase() + productName.slice(1);
+            productName = productName.toLowerCase(); //Nombres en lowercase
+            productName = productName.charAt(0).toUpperCase() + productName.slice(1); //Se pone la primera letra en mayus. se concatena lowercase
 
             /***
              * Precio
@@ -27,7 +25,9 @@ fetch("../json/data.json")
 
 
             let divProductos = document.getElementById("productos");
-
+            /***
+             * Tarjetitas de información
+             *  */ 
             let node = `<div class="card col-4">
           <img src="${img}" class="card-img-top" alt="...">
           <div class="card-body">
